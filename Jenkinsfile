@@ -21,6 +21,6 @@ steps
 sh 'mvn test'
 }}
 stage('Run Application')
-{
-sh 'cp target/MavenWeb.war /opt/tomcat/webapps'
+{steps{
+sh 'cp target/MavenWeb.war /opt/tomcat/webapps'}
 }}}
